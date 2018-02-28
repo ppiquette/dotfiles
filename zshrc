@@ -75,9 +75,7 @@ plugins=(
   fzf-zsh
 )
 
-
-
-# yanick
+######################################################################
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 ######################################################################
 # Fuzzy finder 'fzf'
 
-# fd - cd to selected directory
+# fcd - cd to selected directory
 fcd() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \

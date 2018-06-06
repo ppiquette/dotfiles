@@ -9,7 +9,7 @@ See https://pypi.python.org/pypi/dotfiles
 Then, in ~/ :
 
 ```
-# create an Python venv for your ~ folder
+# create a Python venv for your ~ folder
 cd ~
 pipenv shell
 

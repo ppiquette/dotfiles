@@ -5,6 +5,8 @@
 # to fix pycharm terminal. It should load /etc/paths on macosx but it doesn't
 PATH=/usr/local/bin:$PATH
 
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/yanick/.oh-my-zsh
@@ -13,6 +15,7 @@ export ZSH=/Users/yanick/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="spaceship"
+# ZSH_THEME="powerlevel9k/powerlevel9k"
 ZSH_THEME="frisk"
 
 # Set list of themes to load
@@ -69,17 +72,40 @@ plugins=(
   docker
   docker-compose
   tmux
-  thefuck
   z
   pyenv
   fzf-zsh
+  zsh-completions
+  zsh-autosuggestions
+  zsh-iterm-touchbar
 )
 
 ######################################################################
 
 source $ZSH/oh-my-zsh.sh
 
+
+
 # User configuration
+
+# To run legwork test units
+export PYPI_ACCESS_KEY=507cd21e-e8d5-4a59-9f64-9aa1b99969d3
+export PYPI_SECRET_KEY=1d3722bd-5b5d-451c-a570-f90a600d635c
+
+export DB_NAME=legwork
+export MONGO_DB_URI=mongodb://localhost:27017/legwork?uuidRepresentation\=standard
+export HOST_INVESTIGATOR_USER=user
+export PYTHONUNBUFFERED=1
+export REDIS_HOST=localhost
+export PYTHONASYNCIODEBUG=0
+
+# Add them to launchctl to have them inside pycharm
+launchctl setenv DB_NAME ${DB_NAME}
+launchctl setenv MONGO_DB_URI ${MONGO_DB_URI}
+launchctl setenv HOST_INVESTIGATOR_USER ${HOST_INVESTIGATOR_USER}
+launchctl setenv PYTHONUNBUFFERED ${PYTHONUNBUFFERED}
+launchctl setenv REDIS_HOST ${REDIS_HOST}
+launchctl setenv PYTHONASYNCIODEBUG ${PYTHONASYNCIODEBUG}
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

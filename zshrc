@@ -3,7 +3,7 @@
 
 # yanick
 # to fix pycharm terminal. It should load /etc/paths on macosx but it doesn't
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:$PATH:/Users/yanick/Documents/kaizen/flutter/bin
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
@@ -77,7 +77,6 @@ plugins=(
   fzf-zsh
   zsh-completions
   zsh-autosuggestions
-  zsh-iterm-touchbar
 )
 
 ######################################################################
@@ -94,10 +93,14 @@ export PYPI_SECRET_KEY=1d3722bd-5b5d-451c-a570-f90a600d635c
 
 export DB_NAME=legwork
 export MONGO_DB_URI=mongodb://localhost:27017/legwork?uuidRepresentation\=standard
+export POSTGRES_DB_URI=postgresql+psycopg2://legwork:legwork@localhost:5432/legwork
 export HOST_INVESTIGATOR_USER=user
 export PYTHONUNBUFFERED=1
 export REDIS_HOST=localhost
 export PYTHONASYNCIODEBUG=0
+export VIRUSTOTAL_API_KEY="20cdc30f16518e12c7003333f57704bca7556c06ae94a438a0838e35ea1ecac9"
+export TRAC_URI="http://legwork:L3gw0rk1!@trac.legwork.elementai.com/login/rpc"
+export FLASK_SECRET_KEY="my_flask_dev_secret_AA53D537-1AB4-48EA-AF81-3A93546F6438"
 
 # Add them to launchctl to have them inside pycharm
 launchctl setenv DB_NAME ${DB_NAME}
@@ -106,6 +109,10 @@ launchctl setenv HOST_INVESTIGATOR_USER ${HOST_INVESTIGATOR_USER}
 launchctl setenv PYTHONUNBUFFERED ${PYTHONUNBUFFERED}
 launchctl setenv REDIS_HOST ${REDIS_HOST}
 launchctl setenv PYTHONASYNCIODEBUG ${PYTHONASYNCIODEBUG}
+launchctl setenv POSTGRES_DB_URI ${POSTGRES_DB_URI}
+launchctl setenv VIRUSTOTAL_API_KEY ${VIRUSTOTAL_API_KEY}
+launchctl setenv TRAC_URI ${TRAC_URI}
+launchctl setenv FLASK_SECRET_KEY ${FLASK_SECRET_KEY}
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

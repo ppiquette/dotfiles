@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/yanick'
+let g:netrw_dirhist_2='/Users/yanick/.subversion'
+let g:netrw_dirhist_3='/Users/yanick/.oh-my-zsh'
+let g:netrw_dirhist_4='/Users/yanick/.zprezto'
+let g:netrw_dirhist_5='/Users/yanick/.oh-my-zsh'
+let g:netrw_dirhist_6='/Users/yanick'
+let g:netrw_dirhist_7='/Users/yanick/Desktop'
+let g:netrw_dirhist_8='/Users/yanick/Library/Caches/Cleanup At Startup/Transmit/B43EEAD6-9818-4DE4-B89F-388491363E3C'
+let g:netrw_dirhist_9='/Users/yanick/.ssh'

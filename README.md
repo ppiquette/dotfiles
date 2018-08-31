@@ -17,7 +17,7 @@ pipenv shell
 pip install dotfiles
 
 # Clone the git repo
-git clone git@github.com:yanickc/dotfiles.git Dotfiles
+git clone git@github.com:ppiquette/dotfiles.git Dotfiles
 
 # Create dotfiles symlinks
 dotfiles --sync

@@ -4,15 +4,10 @@ See https://pypi.python.org/pypi/dotfiles
 
 ## On new a Mac, install python and pipenv:
 `brew install python3`
-`brew install pipenv`
 
 Then, in ~/ :
 
-```
-# create a Python venv for your ~ folder
-cd ~
-pipenv shell
-
+/```
 # install the 'dotfiles' utility
 pip install dotfiles
 

@@ -3,13 +3,13 @@
 
 # yanick
 # to fix pycharm terminal. It should load /etc/paths on macosx but it doesn't
-PATH=/usr/local/bin:$PATH:/Users/yanick/Documents/kaizen/flutter/bin
+PATH=/usr/local/bin:$PATH:/Users/patrickpiquette/Documents/kaizen/flutter/bin
 
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/yanick/.oh-my-zsh
+export ZSH=/Users/patrickpiquette/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -124,7 +124,7 @@ fcd() {
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
-} 
+}
 
 # Modified version where you can press
 #   - CTRL-O to open with `open` command,
@@ -185,4 +185,3 @@ tm() {
 ######################################################################
 # iterm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
